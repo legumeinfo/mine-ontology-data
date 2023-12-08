@@ -3,9 +3,14 @@
 # Uses robot to convert the downloaded OWL/RDF file to OBO format.
 
 mkdir -p crop-ontology
-for crop in CO_335 CO_336 CO_337 CO_338 CO_340 CO_341 CO_346
+for crop in 335 336 337 338 340 341 346
 do
-    wget https://cropontology.org/ontology/$crop/rdf -O $crop.owl
-    java -jar jar/robot.jar convert -i $crop.owl --format obo -o crop-ontology/$crop.obo
-    rm $crop.owl
+    wget https://cropontology.org/ontology/CO_$crop/rdf -O CO_$crop.owl
+    java -jar jar/robot.jar convert --check false -i CO_$crop.owl --format obo -o CO_$crop.tmp
+    sed s/CO:$crop/CO_$crop/g CO_$crop.tmp > CO_$crop.obo
 done
+mv CO_*.obo crop-ontology/
+rm CO_*.owl
+rm CO_*.tmp
+
+echo "*** Remove name: entry at top of files - it breaks the obo loader! ***"
