@@ -1,0 +1,5 @@
+# update the go obo file(s)
+wget http://current.geneontology.org/ontology/go.obo
+wget http://current.geneontology.org/ontology/go-basic.obo
+mv go.obo gene-ontology/
+mv go-basic.obo gene-ontology/

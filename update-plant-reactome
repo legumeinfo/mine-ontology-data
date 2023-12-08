@@ -1,0 +1,3 @@
+#!/bin/sh
+wget https://plantreactome.gramene.org/download/current/gene_ids_by_pathway_and_species.tab
+mv gene_ids_by_pathway_and_species.tab plant-reactome/

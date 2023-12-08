@@ -1,0 +1,4 @@
+#!/bin/sh
+VERSION=18.0
+#wget http://data.pantherdb.org/ftp/hmm_classifications/current_release/PANTHER${VERSION}_HMM_classifications
+mv PANTHER${VERSION}_HMM_classifications PANTHER/

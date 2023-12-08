@@ -1,0 +1,7 @@
+#!/bin/sh
+wget https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
+gunzip interpro.xml.gz
+mv interpro.xml InterPro/
+
+wget https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
+mv interpro2go InterPro/ontology/

@@ -1,0 +1,4 @@
+#!/bin/sh
+wget https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/database_files/pfamA.txt.gz
+gunzip pfamA.txt.gz
+mv pfamA.txt Pfam/ 

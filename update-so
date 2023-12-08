@@ -1,0 +1,4 @@
+#!/bin/sh
+cd SO-Ontologies
+git pull
+cd -

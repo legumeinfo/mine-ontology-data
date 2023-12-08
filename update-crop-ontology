@@ -1,0 +1,8 @@
+#!/bin/bash
+for crop in CO_335 CO_336 CO_337 CO_338 CO_340 CO_341 CO_346
+do
+    echo $crop
+    wget https://cropontology.org/ontology/$crop/rdf -O $crop.owl
+    java -jar jar/robot.jar convert -i $crop.owl --format obo -o crop-ontology/$crop.obo
+    rm $crop.owl
+done

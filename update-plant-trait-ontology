@@ -1,0 +1,6 @@
+#!/bin/sh
+cd plant-trait-ontology
+git checkout to.obo
+git pull
+cd -
+echo "*** remove import: lines from to.obo -- they crash the obo loader! ***"
