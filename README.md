@@ -19,3 +19,5 @@ plant-trait-ontology/
 semanticscience/
 soybean-ontology/
 ```
+
+Note that update-crop-ontology uses `jar/robot.jar` to convert the downloaded OWL/RDF file into an OBO file.
