@@ -1,8 +1,11 @@
 #!/bin/sh
 # Update the interpro and interpro2go files.
+
+mkdir -p InterPro
 wget https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
 gunzip interpro.xml.gz
 mv interpro.xml InterPro/
 
+mkdir -p InterPro/ontology
 wget https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro2go
 mv interpro2go InterPro/ontology/

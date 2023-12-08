@@ -1,6 +1,8 @@
 #!/bin/bash
 # Update the crop-ontology files.
 # Uses robot to convert the downloaded OWL/RDF file to OBO format.
+
+mkdir -p crop-ontology
 for crop in CO_335 CO_336 CO_337 CO_338 CO_340 CO_341 CO_346
 do
     wget https://cropontology.org/ontology/$crop/rdf -O $crop.owl

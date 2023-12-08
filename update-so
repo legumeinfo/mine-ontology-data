@@ -1,5 +1,7 @@
 #!/bin/sh
 # Update the SO files, which are in GitHub.
+
+git clone https://github.com/The-Sequence-Ontology/SO-Ontologies.git
 cd SO-Ontologies
 git pull
 cd -

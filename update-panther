@@ -1,5 +1,8 @@
 #!/bin/sh
 # Update the PANTHER classifications, specifying the version below.
+
 VERSION=18.0
+
+mkdir -p PANTHER
 wget http://data.pantherdb.org/ftp/hmm_classifications/current_release/PANTHER${VERSION}_HMM_classifications
 mv PANTHER${VERSION}_HMM_classifications PANTHER/

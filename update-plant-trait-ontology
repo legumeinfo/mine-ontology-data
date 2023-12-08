@@ -1,7 +1,10 @@
 #!/bin/sh
 # Update the Plant Trait Ontology to.obo file, which is in GitHub.
+
+git clone https://github.com/Planteome/plant-trait-ontology.git
 cd plant-trait-ontology
 git checkout to.obo
 git pull
 cd -
 echo "*** remove import: lines from to.obo -- they crash the obo loader! ***"
+echo "*** also, several creation_date entries crash the obo loader! ***"
