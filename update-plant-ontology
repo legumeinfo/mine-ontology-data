@@ -1,4 +1,5 @@
 #!/bin/sh
+# Update the Plant Ontology OBO file.
 wget https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.obo
 mv po.obo plant-ontology/
 echo "*** DELETE the import: lines at the top of po.obo -- current parser chokes on them! ***"

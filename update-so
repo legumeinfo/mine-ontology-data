@@ -1,4 +1,5 @@
 #!/bin/sh
+# Update the SO files, which are in GitHub.
 cd SO-Ontologies
 git pull
 cd -

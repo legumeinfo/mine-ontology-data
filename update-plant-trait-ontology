@@ -1,4 +1,5 @@
 #!/bin/sh
+# Update the Plant Trait Ontology to.obo file, which is in GitHub.
 cd plant-trait-ontology
 git checkout to.obo
 git pull

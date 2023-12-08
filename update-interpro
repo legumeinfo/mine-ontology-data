@@ -1,4 +1,5 @@
 #!/bin/sh
+# Update the interpro and interpro2go files.
 wget https://ftp.ebi.ac.uk/pub/databases/interpro/current_release/interpro.xml.gz
 gunzip interpro.xml.gz
 mv interpro.xml InterPro/

@@ -1,4 +1,5 @@
-# update the go obo file(s)
+#!/bin/sh
+# Update the go obo files.
 wget http://current.geneontology.org/ontology/go.obo
 wget http://current.geneontology.org/ontology/go-basic.obo
 mv go.obo gene-ontology/
