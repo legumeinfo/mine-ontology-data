@@ -2,7 +2,7 @@
 
 Scripts to update the ontology data that are loaded into the mines
 
-The data are not stored in this repo, and reside in the following ignored directories, which must be created before running the update scripts.
+The data are not stored in this repo, and reside in the following ignored directories, which are created by the update scripts if not already present.
 
 ```
 ChEBI/
