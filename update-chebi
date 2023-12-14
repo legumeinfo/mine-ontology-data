@@ -1,0 +1,7 @@
+#!/bin/sh
+# update ChEBI/chebi_lite.obo
+
+mkdir -p ChEBI
+wget https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.obo.gz
+gunzip chebi_lite.obo.gz
+mv chebi_lite.obo ChEBI/
